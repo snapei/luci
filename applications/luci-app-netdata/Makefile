@@ -1,13 +1,17 @@
-#
-# Copyright (C) 2008-2014 The LuCI Team <luci@lists.subsignal.org>
+# Copyright (C) 2016 Openwrt.org
 #
 # This is free software, licensed under the Apache License, Version 2.0 .
 #
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=Material Theme
-LUCI_DEPENDS:=
+LUCI_TITLE:=LuCI support for Netdata
+LUCI_DEPENDS:=+netdata
+LUCI_PKGARCH:=all
+
+PKG_NAME:=luci-app-netdata
+PKG_VERSION:=1.0
+PKG_RELEASE:=3
 
 include ../../luci.mk
 
